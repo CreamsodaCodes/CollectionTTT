@@ -329,7 +329,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shotgunPrefab: {fileID: 885641595956072828, guid: 9eb00e1a48b5dde44a5bd2b68e584245,
     type: 3}
+  laserPrefab: {fileID: 376197778411903901, guid: fba273e570e1e9b41a87c528e7b8dd09,
+    type: 3}
   NumberOfShotguns: 5
+  NumberOfLaser: 5
 --- !u!1 &330225762
 GameObject:
   m_ObjectHideFlags: 0
@@ -1350,3 +1353,152 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &5729546790271376419
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 376197778411903901, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_Name
+      value: Laser
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991527761702186948, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991527761702186948, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991527761702186948, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991527761702186948, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991527761702186948, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991527761702186948, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991527761702186948, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991527761702186948, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991527761702186948, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991527761702186948, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991527761702186948, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877598614488997475, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_AssetId.i0
+      value: 251
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877598614488997475, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_AssetId.i1
+      value: 162
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877598614488997475, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_AssetId.i2
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877598614488997475, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_AssetId.i3
+      value: 229
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877598614488997475, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_AssetId.i4
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877598614488997475, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_AssetId.i5
+      value: 225
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877598614488997475, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_AssetId.i6
+      value: 233
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877598614488997475, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_AssetId.i7
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877598614488997475, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_AssetId.i8
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877598614488997475, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_AssetId.i9
+      value: 135
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877598614488997475, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_AssetId.i10
+      value: 197
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877598614488997475, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_AssetId.i11
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877598614488997475, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_AssetId.i12
+      value: 231
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877598614488997475, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_AssetId.i13
+      value: 184
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877598614488997475, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_AssetId.i14
+      value: 221
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877598614488997475, guid: fba273e570e1e9b41a87c528e7b8dd09,
+        type: 3}
+      propertyPath: m_AssetId.i15
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fba273e570e1e9b41a87c528e7b8dd09, type: 3}
