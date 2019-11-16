@@ -14,7 +14,7 @@ public class Bullet : MonoBehaviour
           health.TakeDamage(Dmg);
           Debug.Log("Getroffen");
         }
-        Destroy(gameObject);
+        //Destroy(gameObject);
         
     }
 }

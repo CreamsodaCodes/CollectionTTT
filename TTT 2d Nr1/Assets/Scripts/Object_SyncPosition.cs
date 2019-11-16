@@ -69,7 +69,7 @@ public class Object_SyncPosition : NetworkBehaviour {
             sending = false;
             return;
         }
-        Vector3 v = target.position;
+        Vector2 v = target.position;
         Quaternion q = target.rotation;
         float distance = Vector2.Distance(lastPositionSent, v);
         float angle = Quaternion.Angle(lastRotationSent, q); ;

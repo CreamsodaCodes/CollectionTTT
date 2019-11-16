@@ -17,6 +17,8 @@ public Transform bulletSpawn;
 public Camera cam;
 
 
+
+
 private void Start() {
     rb = GetComponent<Rigidbody2D> ();
 }
@@ -27,7 +29,7 @@ private void Update() {
     }
     movement.x = Input.GetAxisRaw("Horizontal");
     movement.y = Input.GetAxisRaw("Vertical");
-    
+    Debug.Log(AktivPlayer);
 
     
 }
@@ -46,15 +48,16 @@ public override void OnStartLocalPlayer(){
     farbe = GetComponent<SpriteRenderer>();
     farbe.color = Color.red;
     Camera.main.GetComponent<CameraController>().setTarget(gameObject.transform);
+    PlayerCounter.PlayerCount += 1;
+    AktivPlayer.Add(PlayerCounter.PlayerCount);
    
 }
-void Fire(){
-    GameObject bullet = (GameObject) Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
-    bulletRb = GetComponent<Rigidbody2D>();
-    bulletRb.velocity = bullet.transform.forward * 6.0f;
-    Destroy(bullet, 2);
-}
+List<int> AktivPlayer = new List<int>();
+HashSet<int> Tamount = new HashSet<int>();
+public void Tratorteilung()
+{
 
+}
 
 
 

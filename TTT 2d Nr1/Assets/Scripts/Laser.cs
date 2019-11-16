@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -17,10 +17,15 @@ public class Laser : NetworkBehaviour
         } 
         if (Input.GetButtonDown("Fire1"))
         {
+            CmdStarttoShoot();
             
-            StartCoroutine(Shoot());
         }
         
+    }
+            [Command]
+    void CmdStarttoShoot()
+    {
+            StartCoroutine(Shoot());
     }
     IEnumerator Shoot()
     {
@@ -38,8 +43,9 @@ public class Laser : NetworkBehaviour
             lineRenderer.SetPosition(0, firePoint.position);
             lineRenderer.SetPosition(1, firePoint.position + firePoint.up * 100);
         }
+        NetworkServer.Spawn(hitInfo);
         lineRenderer.enabled = true;
-        yield return new WaitForSeconds(0.7f);
+        yield return new WaitForSeconds(0.7f * Time.fixedDeltaTime );
         lineRenderer.enabled = false;
     }
-}
+}*/
