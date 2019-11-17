@@ -28,7 +28,7 @@ public class Sniper : NetworkBehaviour
        { 
         GameObject bullet2 = Instantiate(bulletPrefab2, firePoint2.position * x, firePoint2.rotation);
         Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
-        rb.AddForce(firePoint2.up * bulletForce2, ForceMode2D.Impulse);
+        rb.AddForce(firePoint2.forward * bulletForce2, ForceMode2D.Impulse);
         NetworkServer.Spawn(bullet2);
         Destroy(bullet2, 2);
         x *= 1.1f;
