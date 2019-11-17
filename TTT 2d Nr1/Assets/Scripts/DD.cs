@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
-
+//Ist das Player Script welches man nicht deaktivieren sollte.
 public class DD : NetworkBehaviour
 {
 private Rigidbody2D rb;
@@ -28,11 +28,13 @@ public void TraitorCheck()
         Traitor = true;
         CheckNeeded = false;
         farbe.color = Color.blue;
+        Debug.Log(CheckNeeded);
+        Debug.Log("myNum" + myNumber);
     }
     else
     {
         //Falls wir noch einen Inno boolien bräuchten
-
+        CheckNeeded = false;
         
     }
 }
